@@ -1,5 +1,6 @@
 @import "tailwindcss";
 
+
 :root {
   /* Base */
   --bg: #0b0d12;
@@ -24,13 +25,6 @@
 }
 
 
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
 
 @media (prefers-color-scheme: dark) {
   :root {

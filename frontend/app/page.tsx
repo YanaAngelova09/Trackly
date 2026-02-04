@@ -31,29 +31,36 @@ export default function Home() {
         </header>
 
         {/* LISTEN SECTION */}
-        <section className="mt-10 rounded-2xl border border-white/10 bg-white/5 px-6 py-14">
-          <div className="mx-auto flex max-w-xl flex-col items-center text-center">
-            <p className="text-xs uppercase tracking-[0.3em] text-white/50">
-              Music recognition
-            </p>
+<section
+  className="mt-10 rounded-2xl border px-6 py-14 backdrop-blur-xl"
+  style={{
+    backgroundColor: "var(--surface)",
+    borderColor: "var(--border)",
+  }}
+>
+  <div className="mx-auto flex max-w-xl flex-col items-center text-center">
+    <p className="text-xs uppercase tracking-[0.35em] text-[var(--muted)]">
+      Music recognition
+    </p>
 
-            <h1 className="mt-3 text-3xl font-semibold">
-              Identify music. Access it legally.
-            </h1>
+    <h1 className="mt-3 text-3xl font-semibold">
+      Identify music. Access it legally.
+    </h1>
 
-            <p className="mt-3 text-sm text-white/60">
-              Tap listen to recognize a song and get official access.
-            </p>
+    <p className="mt-3 text-sm text-[var(--muted)]">
+      Tap listen to recognize a song and get official access.
+    </p>
 
-            <button className="mt-10 h-36 w-36 rounded-full border border-white/10 bg-white/5 text-lg font-semibold tracking-wide transition hover:bg-white/10">
-              LISTEN
-            </button>
+    <button className="mt-10 h-36 w-36 rounded-full border border-white/10 bg-white/5 text-lg font-semibold tracking-wide transition hover:bg-white/10">
+      LISTEN
+    </button>
 
-            <button className="mt-6 text-xs text-white/60 hover:text-white">
-              Upload audio file
-            </button>
-          </div>
-        </section>
+    <button className="mt-6 text-xs text-white/60 hover:text-white">
+      Upload audio file
+    </button>
+  </div>
+</section>
+
 
         {/* RECENT HISTORY */}
         <section className="mt-10">
