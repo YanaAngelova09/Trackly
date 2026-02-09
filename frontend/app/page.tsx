@@ -1,73 +1,45 @@
 import TrackCard from "../components/TrackCard";
 import { recentTracks } from "../data/mockTracks";
 
-
 export default function Home() {
   return (
-   <main
-  className="min-h-screen text-[var(--text)]"
-  style={{
-    background:
-      "radial-gradient(900px 500px at 50% 20%, rgba(124,92,255,0.16), transparent 60%), radial-gradient(700px 380px at 20% 80%, rgba(76,211,255,0.08), transparent 55%), linear-gradient(180deg, var(--bg), var(--bg-2))",
-  }}
->
-
+    <main className="min-h-screen">
       <div className="mx-auto max-w-5xl px-6 py-10">
-
-        {/* HEADER */}
-        <header className="flex items-center justify-between">
-          <div className="text-lg font-semibold tracking-wide">
-            Trackly
-          </div>
-
-          <nav className="flex items-center gap-2">
-            <button className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-sm hover:bg-white/10">
-              Home
-            </button>
-            <button className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-sm text-white/60 hover:bg-white/10">
-              Library
-            </button>
-          </nav>
-        </header>
-
         {/* LISTEN SECTION */}
-<section
-  className="mt-10 rounded-2xl border px-6 py-14 backdrop-blur-xl"
-  style={{
-    backgroundColor: "var(--surface)",
-    borderColor: "var(--border)",
-  }}
->
-  <div className="mx-auto flex max-w-xl flex-col items-center text-center">
-    <p className="text-xs uppercase tracking-[0.35em] text-[var(--muted)]">
-      Music recognition
-    </p>
+        <section
+          className="relative mt-10 rounded-2xl border px-6 py-14 backdrop-blur-xl overflow-visible"
+          style={{
+            backgroundColor: "var(--surface)",
+            borderColor: "var(--border)",
+          }}
+        >
+          <div className="mx-auto flex max-w-xl flex-col items-center text-center">
+            
 
-    <h1 className="mt-3 text-3xl font-semibold">
-      Identify music. Access it legally.
-    </h1>
+            <p className="mt-3 text-sm text-[var(--muted)]">
+              Tap listen to recognize a song and get official access.
+            </p>
 
-    <p className="mt-3 text-sm text-[var(--muted)]">
-      Tap listen to recognize a song and get official access.
-    </p>
+            {/* LISTEN BUTTON */}
+            <div className="mt-10 relative flex items-center justify-center z-10">
+              <div className="absolute h-72 w-72 rounded-full listenGlow"></div>
+              <div className="absolute h-56 w-56 rounded-full listenRing"></div>
 
-    <button className="mt-10 h-36 w-36 rounded-full border border-white/10 bg-white/5 text-lg font-semibold tracking-wide transition hover:bg-white/10">
-      LISTEN
-    </button>
+              <button className="relative flex h-36 w-36 items-center justify-center rounded-full listenButton">
+                LISTEN
+              </button>
+            </div>
 
-    <button className="mt-6 text-xs text-white/60 hover:text-white">
-      Upload audio file
-    </button>
-  </div>
-</section>
-
+            <button className="mt-6 text-xs text-white/60 hover:text-white">
+              Upload audio file
+            </button>
+          </div>
+        </section>
 
         {/* RECENT HISTORY */}
         <section className="mt-10">
           <div className="mb-3 flex items-center justify-between">
-            <h2 className="text-sm font-semibold text-white/90">
-              Recent
-            </h2>
+            <h2 className="text-sm font-semibold text-white/90">Recent</h2>
             <button className="text-xs text-white/60 hover:text-white/90">
               View all
             </button>
@@ -79,7 +51,6 @@ export default function Home() {
             ))}
           </div>
         </section>
-
       </div>
     </main>
   );

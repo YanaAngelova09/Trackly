@@ -22,6 +22,11 @@
   /* Status */
   --free: #2cff9a;
   --warning: #ffcc66;
+
+  --listen-glow: rgba(124,92,255,0.55);
+  --listen-glow-soft: rgba(124,92,255,0.18);
+  --listen-core: #7c5cff;
+
 }
 
 
@@ -38,3 +43,81 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.navItem {
+  padding: 10px 12px;
+  border-radius: 12px;
+  color: rgba(255,255,255,0.78);
+  transition: all 0.18s ease;
+  border: 1px solid transparent;
+}
+
+.navItem:hover {
+  background: rgba(255,255,255,0.07);
+  color: rgba(255,255,255,0.95);
+  border-color: rgba(255,255,255,0.10);
+  transform: translateX(4px);
+}
+
+.navItemActive {
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: rgba(124,92,255,0.16);
+  color: rgba(255,255,255,0.95);
+  border: 1px solid rgba(124,92,255,0.25);
+}
+
+/* ================= LISTEN BUTTON ================= */
+
+.listenButton {
+  background: radial-gradient(circle at 30% 30%, #9b8cff, #6c4dff);
+  color: white;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  font-size: 15px;
+  box-shadow:
+    0 0 25px rgba(108, 77, 255, 0.6),
+    inset 0 0 25px rgba(255,255,255,0.15);
+  transition: all 0.25s ease;
+}
+
+.listenButton:hover {
+  transform: scale(1.08);
+  box-shadow:
+    0 0 60px rgba(124,92,255,0.9),
+    0 0 120px rgba(124,92,255,0.35),
+    inset 0 0 30px rgba(255,255,255,0.25);
+}
+
+/* OUTER SOFT GLOW */
+.listenGlow {
+  background: radial-gradient(circle, rgba(124,92,255,0.45), transparent 70%);
+  filter: blur(60px);
+  opacity: 0.9;
+  pointer-events: none;
+}
+
+/* PULSING RING */
+.listenRing {
+  border: 2px solid rgba(124,92,255,0.45);
+  animation: pulseRing 2.6s infinite ease-out;
+  pointer-events: none;
+}
+
+@keyframes pulseRing {
+  0% {
+    transform: scale(0.85);
+    opacity: 0.9;
+  }
+  70% {
+    transform: scale(1.25);
+    opacity: 0.15;
+  }
+  100% {
+    transform: scale(1.4);
+    opacity: 0;
+  }
+}
+
+
+
