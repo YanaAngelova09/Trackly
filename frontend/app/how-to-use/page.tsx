@@ -159,10 +159,10 @@ export default function HowToUsePage() {
           </a>
 
           <a
-            href="/idea"
+            href="/foundres"
             className="rounded-full border border-white/10 bg-white/5 px-5 py-2 text-sm text-white/80 hover:bg-white/10"
           >
-            View the Idea
+            View the Founders
           </a>
         </div>
       </section>
