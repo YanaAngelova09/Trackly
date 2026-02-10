@@ -44,13 +44,14 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.navItem {
+.navItemActive {
   padding: 10px 12px;
   border-radius: 12px;
-  color: rgba(255,255,255,0.78);
-  transition: all 0.18s ease;
-  border: 1px solid transparent;
+  background: rgba(124,92,255,0.16);
+  border: 1px solid rgba(124,92,255,0.28);
+  color: rgba(255,255,255,0.95);
 }
+
 
 .navItem:hover {
   background: rgba(255,255,255,0.07);

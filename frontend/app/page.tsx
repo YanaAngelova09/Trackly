@@ -5,6 +5,22 @@ export default function Home() {
   return (
     <main className="min-h-screen">
       <div className="mx-auto max-w-5xl px-6 py-10">
+
+        {/* HERO HEADER */}
+    <div className="mb-10 text-center">
+      <h1 className="text-5xl font-bold tracking-tight">
+        <span className="text-[var(--accent)]">Trackly</span>
+      </h1>
+
+      <h2 className="mt-4 text-[var(--muted)] font-semibold">
+        Identify any song instantly
+      </h2>
+
+
+    </div>
+
+
+
         {/* LISTEN SECTION */}
         <section
           className="relative mt-10 rounded-2xl border px-6 py-14 backdrop-blur-xl overflow-visible"
