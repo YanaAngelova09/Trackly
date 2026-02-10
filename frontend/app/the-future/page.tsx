@@ -1,171 +1,120 @@
-export default function FuturePage() {
-  const roadmap = [
-    {
-      tag: "Phase 1",
-      title: "MVP → Solid core",
-      text: "Stabilize recognition flow, improve UI responsiveness, and make the demo experience flawless.",
-      items: ["UI polish & accessibility", "Better history (filters, search)", "Performance + caching"],
-    },
-    {
-      tag: "Phase 2",
-      title: "Integrations → Official sources",
-      text: "Deepen platform integration to make the ‘legal access’ part truly instant and reliable.",
-      items: ["Spotify/Apple/YouTube deep links", "Artist pages + metadata enrichment", "Reliable license labeling"],
-    },
-    {
-      tag: "Phase 3",
-      title: "Library → Personal experience",
-      text: "Turn Trackly into a personal music assistant with collections and user accounts.",
-      items: ["User profiles", "Saved tracks & playlists", "Sync across devices"],
-    },
-    {
-      tag: "Phase 4",
-      title: "Discovery → Smart recommendations",
-      text: "Move from recognition to discovery: help users find more music they’ll love.",
-      items: ["Recommendations", "Similar tracks/artists", "Listening insights"],
-    },
-  ];
-
-  const pillars = [
-    {
-      title: "Legal-first by design",
-      text: "We intentionally route users to official platforms to support artists and reduce piracy.",
-    },
-    {
-      title: "Minimal interaction",
-      text: "One main action. Everything else is clarity: result, links, and history — no clutter.",
-    },
-    {
-      title: "Scalable architecture",
-      text: "Clear separation between UI, APIs, and integrations so the product can grow without rewriting.",
-    },
-  ];
-
+export default function TheFuturePage() {
   return (
-    <main className="mx-auto max-w-6xl px-6 py-16 text-white">
+    <main className="mx-auto max-w-5xl px-6 py-16 text-[var(--text)]">
       {/* HERO */}
-      <section className="relative overflow-hidden rounded-3xl border border-white/10 bg-white/5 px-10 py-14 backdrop-blur-xl">
-        <div className="absolute -top-40 left-1/2 h-96 w-96 -translate-x-1/2 rounded-full bg-[var(--accent)]/25 blur-3xl" />
-        <div className="absolute -bottom-44 -right-32 h-[26rem] w-[26rem] rounded-full bg-cyan-400/10 blur-3xl" />
+      <section className="text-center mb-16">
+        <div className="mx-auto inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs text-white/70">
+          <span className="h-2 w-2 rounded-full bg-[var(--accent)] shadow-[0_0_16px_rgba(124,92,255,0.9)]" />
+          The Future • Roadmap & Vision
+        </div>
 
-        <div className="relative">
-          <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-black/20 px-4 py-2 text-xs text-white/70">
-            <span className="h-2 w-2 rounded-full bg-[var(--accent)] shadow-[0_0_18px_rgba(124,92,255,0.9)]" />
-            The Future • Roadmap • Vision
+        <h1 className="mt-6 text-5xl font-semibold tracking-tight">
+          Where{" "}
+          <span className="text-[var(--accent)] drop-shadow-[0_0_18px_rgba(124,92,255,0.35)]">
+            Trackly
+          </span>{" "}
+          goes next
+        </h1>
+
+        <p className="mx-auto mt-5 max-w-2xl text-lg text-white/65 leading-relaxed">
+          Our goal is to evolve Trackly from “recognize a song” into a complete, legal-first
+          music access + discovery experience.
+        </p>
+      </section>
+
+      {/* BIG PROMISE */}
+      <section className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 p-10 backdrop-blur-xl mb-14">
+        <div className="absolute -top-28 left-12 h-72 w-72 rounded-full bg-[var(--accent)]/20 blur-3xl" />
+        <div className="absolute -bottom-28 right-12 h-72 w-72 rounded-full bg-[var(--accent)]/15 blur-3xl" />
+
+        <h2 className="relative text-2xl font-semibold mb-3 text-white">
+          One tap → real value
+        </h2>
+        <p className="relative text-white/75 leading-relaxed">
+          In future versions, Trackly will not only identify music, but will also help users
+          build their library, explore official artist pages, and discover new tracks — without
+          falling into unofficial sources.
+        </p>
+
+        <div className="relative mt-6 grid gap-3 md:grid-cols-3">
+          <div className="rounded-xl border border-white/10 bg-black/20 p-5">
+            <div className="text-xs text-white/55">Focus</div>
+            <div className="mt-2 text-sm text-white/90">Fast, clean UX</div>
           </div>
-
-          <h1 className="mt-6 text-5xl font-semibold tracking-tight">
-            Where{" "}
-            <span className="text-[var(--accent)] drop-shadow-[0_0_18px_rgba(124,92,255,0.35)]">
-              Trackly
-            </span>{" "}
-            goes next
-          </h1>
-
-          <p className="mt-5 max-w-2xl text-lg text-white/65 leading-relaxed">
-            Our demo is the beginning. The long-term plan is to evolve Trackly from a
-            recognition tool into a legal-first music assistant and discovery platform.
-          </p>
-
-          <div className="mt-8 flex flex-wrap gap-2">
-            <span className="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-white/85">
-              Roadmap
-            </span>
-            <span className="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-white/70">
-              Integrations
-            </span>
-            <span className="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-white/70">
-              Library
-            </span>
-            <span className="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-white/70">
-              Discovery
-            </span>
+          <div className="rounded-xl border border-white/10 bg-black/20 p-5">
+            <div className="text-xs text-white/55">Principle</div>
+            <div className="mt-2 text-sm text-white/90">Legal-first access</div>
+          </div>
+          <div className="rounded-xl border border-white/10 bg-black/20 p-5">
+            <div className="text-xs text-white/55">Direction</div>
+            <div className="mt-2 text-sm text-white/90">Discovery & library</div>
           </div>
         </div>
       </section>
 
-      {/* PILLARS */}
-      <section className="mt-14 grid gap-6 md:grid-cols-3">
-        {pillars.map((p) => (
-          <div
-            key={p.title}
-            className="rounded-2xl border border-white/10 bg-white/5 p-7 backdrop-blur-xl transition hover:bg-white/10"
-          >
-            <h2 className="text-lg font-semibold">{p.title}</h2>
-            <p className="mt-3 text-sm text-white/70 leading-relaxed">{p.text}</p>
+      {/* ROADMAP */}
+      <section className="mb-14">
+        <div className="mb-4 flex items-center justify-between">
+          <h2 className="text-xl font-semibold text-white/95">Roadmap</h2>
+          <span className="text-xs text-white/50">Next steps after the demo</span>
+        </div>
+
+        <div className="grid gap-4 md:grid-cols-2">
+          <div className="rounded-2xl border border-white/10 bg-white/5 p-7 backdrop-blur-xl">
+            <div className="text-xs text-white/55">Phase 1</div>
+            <h3 className="mt-2 text-lg font-semibold text-white">Real recognition + backend</h3>
+            <ul className="mt-3 space-y-2 text-sm text-white/70">
+              <li>• /recognize endpoint (audio → track result)</li>
+              <li>• Store recent history (per device / per user)</li>
+              <li>• Official platform links (Spotify/Apple/YouTube)</li>
+            </ul>
           </div>
-        ))}
-      </section>
 
-      {/* ROADMAP TITLE */}
-      <section className="mt-16 text-center">
-        <p className="text-xs uppercase tracking-[0.35em] text-white/60">Roadmap</p>
-        <h2 className="mt-4 text-3xl font-semibold">A clear path, step by step</h2>
-        <p className="mx-auto mt-3 max-w-2xl text-sm text-white/65 leading-relaxed">
-          Each phase builds on the previous one: first perfect the core experience, then expand
-          integrations, then add personalization, then unlock discovery.
-        </p>
-      </section>
-
-      {/* ROADMAP GRID */}
-      <section className="mt-10 grid gap-6 lg:grid-cols-2">
-        {roadmap.map((r) => (
-          <div
-            key={r.title}
-            className="relative overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur-xl"
-          >
-            <div className="absolute -top-24 -left-20 h-60 w-60 rounded-full bg-[var(--accent)]/18 blur-3xl" />
-
-            <div className="relative">
-              <div className="inline-flex items-center rounded-full border border-white/10 bg-black/20 px-3 py-1 text-xs text-white/70">
-                {r.tag}
-              </div>
-
-              <h3 className="mt-4 text-2xl font-semibold">{r.title}</h3>
-              <p className="mt-3 text-sm text-white/70 leading-relaxed">{r.text}</p>
-
-              <ul className="mt-6 space-y-2 text-sm text-white/70">
-                {r.items.map((it) => (
-                  <li key={it} className="flex items-start gap-2">
-                    <span className="mt-1 inline-block h-2 w-2 rounded-full bg-[var(--accent)] shadow-[0_0_12px_rgba(124,92,255,0.7)]" />
-                    <span>{it}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
+          <div className="rounded-2xl border border-white/10 bg-white/5 p-7 backdrop-blur-xl">
+            <div className="text-xs text-white/55">Phase 2</div>
+            <h3 className="mt-2 text-lg font-semibold text-white">Library & profiles</h3>
+            <ul className="mt-3 space-y-2 text-sm text-white/70">
+              <li>• Save to library (favorites + playlists)</li>
+              <li>• User accounts (optional, simple)</li>
+              <li>• Sync across devices</li>
+            </ul>
           </div>
-        ))}
+
+          <div className="rounded-2xl border border-white/10 bg-white/5 p-7 backdrop-blur-xl">
+            <div className="text-xs text-white/55">Phase 3</div>
+            <h3 className="mt-2 text-lg font-semibold text-white">Discovery mode</h3>
+            <ul className="mt-3 space-y-2 text-sm text-white/70">
+              <li>• Similar tracks / artist-based recommendations</li>
+              <li>• Explore official artist pages</li>
+              <li>• Smart filters (genre, vibe, popularity)</li>
+            </ul>
+          </div>
+
+          <div className="rounded-2xl border border-white/10 bg-white/5 p-7 backdrop-blur-xl">
+            <div className="text-xs text-white/55">Phase 4</div>
+            <h3 className="mt-2 text-lg font-semibold text-white">Premium polish</h3>
+            <ul className="mt-3 space-y-2 text-sm text-white/70">
+              <li>• Shareable “result cards” (beautiful summary)</li>
+              <li>• Analytics (listening habits & trends)</li>
+              <li>• Performance optimizations + caching</li>
+            </ul>
+          </div>
+        </div>
       </section>
 
-      {/* FINAL IMPRESSION / CTA */}
-      <section className="mt-16 rounded-3xl border border-white/10 bg-white/5 p-10 text-center backdrop-blur-xl">
-        <h2 className="text-3xl font-semibold">Final note</h2>
-        <p className="mx-auto mt-4 max-w-3xl text-white/70 leading-relaxed">
-          Trackly is built with a clear philosophy: make music recognition useful, safe and legal.
-          Our roadmap proves this is not just a demo — it’s a product direction with growth potential.
+      {/* FINAL IMPRESSION */}
+      <section className="rounded-2xl border border-white/10 bg-white/5 p-10 backdrop-blur-xl text-center">
+        <h2 className="text-2xl font-semibold text-white mb-3">
+          Final message to the jury
+        </h2>
+        <p className="mx-auto max-w-2xl text-white/70 leading-relaxed">
+          Trackly is not just a recognizer. It’s a bridge between identification and legal access —
+          designed with premium UX and built to scale into a real product.
         </p>
 
-        <div className="mt-8 flex flex-wrap justify-center gap-3">
-          <a
-            href="/"
-            className="rounded-full border border-white/10 bg-white/5 px-6 py-2 text-sm hover:bg-white/10"
-          >
-            Back to App
-          </a>
-
-          <a
-            href="/"
-            className="rounded-full border border-white/10 bg-white/5 px-6 py-2 text-sm text-white/85 hover:bg-white/10"
-          >
-            Back to App
-          </a>
-
-          <a
-            href="/idea"
-            className="rounded-full border border-white/10 bg-[var(--accent)]/20 px-6 py-2 text-sm text-white hover:bg-[var(--accent)]/30"
-          >
-            Revisit the Idea
-          </a>
+        <div className="mt-7 inline-flex items-center gap-3 rounded-full border border-white/10 bg-black/20 px-5 py-3 text-sm text-white/80">
+          <span className="h-2 w-2 rounded-full bg-[var(--accent)] shadow-[0_0_18px_rgba(124,92,255,0.9)]" />
+          Next: backend integration + real recognition demo
         </div>
       </section>
     </main>

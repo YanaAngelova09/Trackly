@@ -49,7 +49,7 @@ export default function RootLayout({
                 🧠 Concept
               </Link>
 
-              <Link className="navItem" href="/theFuture">
+              <Link className="navItem" href="/the-future">
                 💡 The Future
               </Link>
             </nav>
