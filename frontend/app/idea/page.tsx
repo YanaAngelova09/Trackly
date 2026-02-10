@@ -2,135 +2,135 @@ export default function IdeaPage() {
   return (
     <main className="mx-auto max-w-5xl px-6 py-16 text-white">
       {/* HERO */}
-      <section className="text-center mb-16">
+      <section className="mb-16 text-center">
         <div className="mx-auto inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs text-white/70">
           <span className="h-2 w-2 rounded-full bg-[var(--accent)] shadow-[0_0_16px_rgba(124,92,255,0.9)]" />
-          Idea • Проблем → Решение → Реализация
+          Idea • Problem → Solution → Implementation
         </div>
 
         <h1 className="mt-6 text-5xl font-semibold tracking-tight">
-          Идеята зад{" "}
+          The Idea Behind{" "}
           <span className="text-[var(--accent)] drop-shadow-[0_0_18px_rgba(124,92,255,0.35)]">
             Trackly
           </span>
         </h1>
 
-        <p className="mx-auto mt-5 max-w-2xl text-lg text-white/65 leading-relaxed">
-          Trackly разпознава песен и веднага показва легален път за достъп — официални
-          платформи, линкове и страница на артиста, плюс история на разпознатото.
+        <p className="mx-auto mt-5 max-w-2xl text-lg leading-relaxed text-white/65">
+          Trackly recognizes a song and immediately provides a legal path to access —
+          official platforms, links and an artist page, along with a history of recognized tracks.
         </p>
       </section>
 
       {/* QUICK SUMMARY */}
-      <section className="grid gap-4 md:grid-cols-3 mb-14">
+      <section className="mb-14 grid gap-4 md:grid-cols-3">
         <div className="rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-xl">
-          <div className="text-xs text-white/55">Проблем</div>
-          <h3 className="mt-2 text-lg font-semibold">Разпознаване без “следваща стъпка”</h3>
-          <p className="mt-3 text-sm text-white/70 leading-relaxed">
-            След като разпознаеш песен, често пак търсиш ръчно къде да я слушаш
-            (Spotify/YouTube/Apple), и можеш да попаднеш на неофициални източници.
+          <div className="text-xs text-white/55">Problem</div>
+          <h3 className="mt-2 text-lg font-semibold">Recognition without a “next step”</h3>
+          <p className="mt-3 text-sm leading-relaxed text-white/70">
+            After recognizing a song, users still need to manually search where to
+            listen to it (Spotify/YouTube/Apple) and may end up on unofficial sources.
           </p>
         </div>
 
         <div className="rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-xl">
-          <div className="text-xs text-white/55">Решение</div>
-          <h3 className="mt-2 text-lg font-semibold">Един резултат → легален достъп</h3>
-          <p className="mt-3 text-sm text-white/70 leading-relaxed">
-            Trackly показва ясни действия: “Open in Spotify/YouTube/Apple”, “Artist page”,
-            “Save in history” — всичко на едно място.
+          <div className="text-xs text-white/55">Solution</div>
+          <h3 className="mt-2 text-lg font-semibold">One result → legal access</h3>
+          <p className="mt-3 text-sm leading-relaxed text-white/70">
+            Trackly provides clear actions: “Open in Spotify/YouTube/Apple”, “Artist page”,
+            “Save in history” — all in one place.
           </p>
         </div>
 
         <div className="rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-xl">
-          <div className="text-xs text-white/55">Реализация</div>
-          <h3 className="mt-2 text-lg font-semibold">UI + API интеграции</h3>
-          <p className="mt-3 text-sm text-white/70 leading-relaxed">
-            Модерен фронтенд (Next.js) + backend API за разпознаване, метаданни,
-            линкове към платформи и история.
+          <div className="text-xs text-white/55">Implementation</div>
+          <h3 className="mt-2 text-lg font-semibold">UI + API integrations</h3>
+          <p className="mt-3 text-sm leading-relaxed text-white/70">
+            A modern frontend (Next.js) with a backend API for recognition,
+            metadata, platform links and history.
           </p>
         </div>
       </section>
 
       {/* PROBLEM */}
-      <section className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 p-8 backdrop-blur-xl mb-14">
+      <section className="relative mb-14 overflow-hidden rounded-2xl border border-white/10 bg-white/5 p-8 backdrop-blur-xl">
         <div className="absolute -top-24 left-10 h-64 w-64 rounded-full bg-[var(--accent)]/20 blur-3xl" />
 
-        <h2 className="relative text-2xl font-semibold mb-3">Проблемът</h2>
+        <h2 className="relative mb-3 text-2xl font-semibold">The Problem</h2>
 
-        <p className="relative text-white/75 leading-relaxed">
-          В ежедневието често чуваме песен (в клип, магазин, кола, заведение) и искаме
-          бързо да я намерим. Самото разпознаване е само първата част. Истинската
-          трудност идва след това:
-          <span className="text-white/90"> къде е най-лесно и легално да я слушаме</span>,
-          как да стигнем до <span className="text-white/90">официалния артист</span> и
-          как да си я запазим за по-късно.
+        <p className="relative leading-relaxed text-white/75">
+          In everyday life we often hear a song (in a video, store, car, or public place)
+          and want to find it quickly. Recognition is only the first step. The real difficulty
+          comes after that:
+          <span className="text-white/90"> where to listen to it legally</span>,
+          how to reach the <span className="text-white/90">official artist</span>,
+          and how to save it for later.
         </p>
 
         <div className="relative mt-6 grid gap-3 md:grid-cols-3">
           <div className="rounded-xl border border-white/10 bg-black/20 p-4">
-            <div className="text-xs text-white/55">Болка</div>
-            <div className="mt-2 text-sm text-white/90">Търсене в 3–4 места</div>
+            <div className="text-xs text-white/55">Pain</div>
+            <div className="mt-2 text-sm text-white/90">Searching in multiple places</div>
           </div>
           <div className="rounded-xl border border-white/10 bg-black/20 p-4">
-            <div className="text-xs text-white/55">Риск</div>
-            <div className="mt-2 text-sm text-white/90">Неофициални линкове/сайтове</div>
+            <div className="text-xs text-white/55">Risk</div>
+            <div className="mt-2 text-sm text-white/90">Unofficial links/websites</div>
           </div>
           <div className="rounded-xl border border-white/10 bg-black/20 p-4">
-            <div className="text-xs text-white/55">Липса</div>
-            <div className="mt-2 text-sm text-white/90">Контекст за артиста и албума</div>
+            <div className="text-xs text-white/55">Missing</div>
+            <div className="mt-2 text-sm text-white/90">Artist and album context</div>
           </div>
         </div>
       </section>
 
       {/* SOLUTION */}
-      <section className="rounded-2xl border border-white/10 bg-white/5 p-8 backdrop-blur-xl mb-14">
-        <h2 className="text-2xl font-semibold mb-3">Решението</h2>
+      <section className="mb-14 rounded-2xl border border-white/10 bg-white/5 p-8 backdrop-blur-xl">
+        <h2 className="mb-3 text-2xl font-semibold">The Solution</h2>
 
-        <p className="text-white/75 leading-relaxed">
-          Trackly прави разпознаването “завършено” — след резултата веднага дава
-          <span className="text-white/90"> ясни бутони към официални платформи</span>,
-          плюс страница на артиста и история на разпознатите песни.
-          Така потребителят има едно действие → пълен резултат → легален достъп.
+        <p className="leading-relaxed text-white/75">
+          Trackly completes the recognition process — after the result it immediately
+          provides <span className="text-white/90">clear buttons to official platforms</span>,
+          an artist page and a history of recognized tracks.
+          The user performs one action → receives a full result → gets legal access.
         </p>
 
         <div className="mt-6 grid gap-3 md:grid-cols-2">
           <div className="rounded-xl border border-white/10 bg-black/20 p-5">
-            <h3 className="text-sm font-semibold">Какво вижда потребителят</h3>
+            <h3 className="text-sm font-semibold">What the user sees</h3>
             <ul className="mt-3 space-y-2 text-sm text-white/70">
-              <li>• Заглавие + артист + обложка</li>
-              <li>• Бутони: Spotify / YouTube Music / Apple Music</li>
-              <li>• Artist page (повече инфо за артиста)</li>
-              <li>• История на последните разпознати песни</li>
-              <li>• Ясно UX поведение (една основна функция)</li>
+              <li>• Title + artist + cover</li>
+              <li>• Buttons: Spotify / YouTube Music / Apple Music</li>
+              <li>• Artist page (more information)</li>
+              <li>• History of recently recognized tracks</li>
+              <li>• Clear UX behavior (one main function)</li>
             </ul>
           </div>
 
           <div className="rounded-xl border border-white/10 bg-black/20 p-5">
-            <h3 className="text-sm font-semibold">Каква е стойността</h3>
+            <h3 className="text-sm font-semibold">Project value</h3>
             <ul className="mt-3 space-y-2 text-sm text-white/70">
-              <li>• Бързина: минимално търсене</li>
-              <li>• Сигурност: официални линкове</li>
-              <li>• Подкрепа за артисти</li>
-              <li>• Подходящо за демо пред жури</li>
-              <li>• Възможност за разширяване (Library, профили)</li>
+              <li>• Speed: minimal searching</li>
+              <li>• Security: official links</li>
+              <li>• Artist support</li>
+              <li>• Suitable for jury demonstration</li>
+              <li>• Expandable (Library, profiles)</li>
             </ul>
           </div>
         </div>
       </section>
 
       {/* IMPLEMENTATION */}
-      <section className="rounded-2xl border border-white/10 bg-white/5 p-8 backdrop-blur-xl mb-14">
-        <h2 className="text-2xl font-semibold mb-3">Реализация (как го правим)</h2>
+      <section className="mb-14 rounded-2xl border border-white/10 bg-white/5 p-8 backdrop-blur-xl">
+        <h2 className="mb-3 text-2xl font-semibold">Implementation</h2>
 
-        <p className="text-white/75 leading-relaxed">
-          Архитектурата е разделена на две части: фронтенд и бекенд. Фронтендът
-          показва интерфейса (Listen, история, страници за презентация), а бекендът
-          връща резултат от разпознаване, метаданни и официални линкове.
+        <p className="leading-relaxed text-white/75">
+          The architecture is divided into two parts: frontend and backend.
+          The frontend displays the interface (Listen, history, presentation pages),
+          while the backend returns recognition results, metadata and official links.
         </p>
 
-        <div className="mt-6 grid gap-3 md:grid-cols-5 text-sm text-white/80">
+        <div className="mt-6 grid gap-3 text-sm text-white/80 md:grid-cols-5">
           <div className="rounded-xl border border-white/10 bg-black/20 p-4">
-            UI<br /><span className="text-white/60">Listen</span>
+            Interface<br /><span className="text-white/60">Listen</span>
           </div>
           <div className="rounded-xl border border-white/10 bg-black/20 p-4">
             API<br /><span className="text-white/60">Backend</span>
@@ -150,20 +150,20 @@ export default function IdeaPage() {
           <div className="rounded-xl border border-white/10 bg-black/20 p-5">
             <h3 className="text-sm font-semibold">Frontend (Next.js)</h3>
             <ul className="mt-3 space-y-2 text-sm text-white/70">
-              <li>• Премиум UI (dark + accent)</li>
-              <li>• Listen бутон (главна функция)</li>
+              <li>• Premium UI (dark + accent)</li>
+              <li>• Listen button (main function)</li>
               <li>• Recent history</li>
-              <li>• Презентационни страници за жури</li>
+              <li>• Presentation pages for the jury</li>
             </ul>
           </div>
 
           <div className="rounded-xl border border-white/10 bg-black/20 p-5">
-            <h3 className="text-sm font-semibold">Backend (план)</h3>
+            <h3 className="text-sm font-semibold">Backend (planned)</h3>
             <ul className="mt-3 space-y-2 text-sm text-white/70">
-              <li>• Endpoint за разпознаване</li>
-              <li>• Endpoint за история</li>
-              <li>• Връзка с платформи (IDs/links)</li>
-              <li>• Кеш/оптимизация за бързина</li>
+              <li>• Recognition endpoint</li>
+              <li>• History endpoint</li>
+              <li>• Platform integration (IDs/links)</li>
+              <li>• Caching and performance optimization</li>
             </ul>
           </div>
         </div>
@@ -173,33 +173,33 @@ export default function IdeaPage() {
       <section className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 p-8 backdrop-blur-xl">
         <div className="absolute -bottom-24 right-10 h-64 w-64 rounded-full bg-[var(--accent)]/18 blur-3xl" />
 
-        <h2 className="relative text-2xl font-semibold mb-3">Трудности по време на създаването</h2>
+        <h2 className="relative mb-3 text-2xl font-semibold">Development Challenges</h2>
 
-        <p className="relative text-white/75 leading-relaxed">
-          По време на разработката срещнахме реални “dev” проблеми, които решихме с
-          итерации и добра структура на проекта:
+        <p className="relative leading-relaxed text-white/75">
+          During development we encountered real technical problems that were solved
+          through iteration and proper project structure:
         </p>
 
         <ul className="relative mt-5 space-y-3 text-sm text-white/70">
           <li>
-            • <span className="text-white/90">Структура и routing:</span> подреждане на
-            страниците и навигацията така, че да има и приложение, и “презентация”.
+            • <span className="text-white/90">Routing structure:</span> organizing
+            pages to function both as an application and a presentation.
           </li>
           <li>
-            • <span className="text-white/90">CSS/дизайн системи:</span> променливи за
-            цветове (палитра), за да е лесно да се управлява визията.
+            • <span className="text-white/90">CSS design system:</span> using color
+            variables (palette) to control the visual style easily.
           </li>
           <li>
-            • <span className="text-white/90">UI детайли:</span> баланс между “лукс”
-            визия и четимост (контраст, размери, spacing).
+            • <span className="text-white/90">UI details:</span> balancing a premium
+            look with readability (contrast, spacing, sizes).
           </li>
           <li>
-            • <span className="text-white/90">Типове (TypeScript):</span> синхронизиране
-            на данни и компоненти (например license статуси).
+            • <span className="text-white/90">TypeScript types:</span> synchronizing
+            data and components (e.g. FREE / COPYRIGHTED status).
           </li>
           <li>
-            • <span className="text-white/90">Работа в екип (GitHub):</span> структура
-            на репото, commit-и и разделяне на задачи.
+            • <span className="text-white/90">Teamwork (GitHub):</span> repository
+            structure, commits and task distribution.
           </li>
         </ul>
       </section>
