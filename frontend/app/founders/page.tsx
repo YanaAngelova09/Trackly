@@ -49,7 +49,7 @@ export default function FoundersPage() {
         </div>
       </section>
 
-      {/* YOU */}
+      {/* Yana */}
       <section className="grid md:grid-cols-2 gap-10 items-center mb-14">
         {/* IMAGE CARD */}
         <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 p-3">
@@ -87,11 +87,11 @@ export default function FoundersPage() {
         </div>
       </section>
 
-      {/* TEAMMATE */}
+      {/* Denislav */}
       <section className="grid md:grid-cols-2 gap-10 items-center mb-14">
         {/* TEXT */}
         <div>
-          <h2 className="text-3xl font-semibold">Teammate Name</h2>
+          <h2 className="text-3xl font-semibold">Denislav Tsenov</h2>
           <p className="mt-2 text-sm text-white/70">
             <span className="text-[var(--accent)] font-medium">Backend Developer</span>{" "}
             • API • Integrations

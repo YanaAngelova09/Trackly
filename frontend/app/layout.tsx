@@ -24,9 +24,13 @@ export default function RootLayout({
               borderRight: "1px solid var(--border)",
             }}
           >
-            <h1 className="mb-8 text-xl font-semibold tracking-wide">
-              <span style={{ color: "var(--accent)" }}>Trackly</span>
-            </h1>
+            <Link href="/" className="block mb-8 select-none">
+  <h1 className="logoWrapper">
+    <span className="logoText">Trackly</span>
+  </h1>
+</Link>
+
+
 
             <nav className="flex flex-col gap-2 text-base">
               <Link className="navItem" href="/">
