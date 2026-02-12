@@ -142,6 +142,18 @@ export default function Home() {
               </button>
             </div>
 
+            {/* SECONDARY ACTIONS (под LISTEN) */}
+<div className="mt-7 flex flex-wrap items-center justify-center gap-3">
+  <button className="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs text-white/80 transition hover:bg-white/10">
+    Upload audio file
+  </button>
+
+  <button className="rounded-full border border-white/10 bg-black/20 px-4 py-2 text-xs text-white/70 transition hover:bg-white/5">
+    View recognition tips
+  </button>
+</div>
+
+
             {/* RESULT HERO CARD */}
             {result && (
               <div className="mt-3 w-full max-w-2xl resultCardPro resultEnter">
