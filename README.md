@@ -1,2 +1,33 @@
 # Trackly
-Modern web application for music recognition and legal access to tracks and artists. Identify songs in real time, view license status, and explore official platforms and artist profiles.
+
+Modern web application for music recognition and legal access to tracks and artists.
+
+## Project structure
+- `frontend/` - Next.js application
+- `backend/` - Express API (`POST /recognize`, `GET /health`)
+- `docs/` - API contract and project notes
+
+## Run locally
+
+### 1) Backend
+```bash
+cd backend
+npm install
+npm run dev
+```
+
+Backend defaults to `http://localhost:4000`.
+
+### 2) Frontend
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+Frontend defaults to calling backend via the Next API proxy route at `/api/recognize`.
+
+Optional env config (`frontend/.env.local`):
+```bash
+TRACKLY_API_BASE_URL=http://localhost:4000
+```

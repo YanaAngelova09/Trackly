@@ -6,10 +6,14 @@ npm run dev
 ```
 
 ### API connection
-Set API base URL in `.env.local`:
+The client calls `/api/recognize` (same-origin Next route).
+
+Set backend URL in `.env.local`:
 ```bash
-NEXT_PUBLIC_API_BASE_URL=http://localhost:4000
+TRACKLY_API_BASE_URL=http://localhost:4000
 ```
+
+`NEXT_PUBLIC_API_BASE_URL` is also supported as a fallback.
 
 ### Feature structure
 - `features/recognition/api.ts` - API client for recognition.
