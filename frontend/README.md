@@ -29,3 +29,11 @@ From repo root:
 npm run setup
 npm run dev
 ```
+
+
+### Remove old `.next` build cache
+From repo root:
+```bash
+npm run clean
+npm run setup
+```

@@ -43,3 +43,12 @@ Optional env config (`frontend/.env.local`):
 ```bash
 TRACKLY_API_BASE_URL=http://localhost:4000
 ```
+
+
+## Replace old local build completely
+If you want to fully wipe generated files (including `.next`) and reinstall fresh:
+```bash
+npm run clean
+npm run setup
+npm run dev
+```
