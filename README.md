@@ -52,12 +52,3 @@ npm run clean
 npm run setup
 npm run dev
 ```
-
-
-### Windows 10/11
-All root scripts are cross-platform and work in **PowerShell**, **CMD**, and **Git Bash**.
-Use the same commands:
-```bash
-npm run setup
-npm run dev
-```
